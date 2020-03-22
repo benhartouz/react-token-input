@@ -1,0 +1,22 @@
+{
+  "name": "react-token-input",
+  "version": "1.0.0",
+  "description": "react token input",
+  "main": "index.js",
+  "repository": "https://github.com/benhartouz/react-token-input.git",
+  "author": "Mohamed Ben hartouz <benhartouzmohamed@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./public/index.html"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "story-router": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
+  }
+}
