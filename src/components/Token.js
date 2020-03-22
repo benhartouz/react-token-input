@@ -1,18 +1,16 @@
 import React, { Fragment } from "react"
 
-class Token extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-    render() {
-        const { item: { value } } = this.props
-        return (
-            <Fragment>
-                <li class="addedTag">{value}<span className="tagRemove">x</span></li>
-            </Fragment>
-        )
-    }
-
+/**
+ * Token component
+ * @param {*} props 
+ */
+const Token = (props) => {
+    const { item: { value, id }, handleRemoveToken } = props
+    return (
+        <Fragment>
+            <li className="addedTag">{value}<span className="tagRemove" onClick={() => { handleRemoveToken(id) }}>x</span></li>
+        </Fragment >
+    )
 }
 
 export default Token

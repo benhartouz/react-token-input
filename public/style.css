@@ -36,8 +36,12 @@ ol, ul {
     display: block;
     padding: 0.5em;
 }
-.tags input:hover {
-    border: 1px solid #000;
+.tags input{
+    font-size : 23px;
+    padding: 0;
+}
+input:focus{
+    outline: none;
 }
 span.tagRemove {
     cursor: pointer;

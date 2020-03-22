@@ -29,6 +29,7 @@ class Input extends React.Component {
                         this.setState({ value: e.target.value })
                     }}
                     value={this.state.value}
+                    autoFocus
                 />
             </li>
         )

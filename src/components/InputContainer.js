@@ -15,7 +15,7 @@ class InputContainer extends React.Component {
      */
     generateTokens = () => {
         const { tokens } = this.state
-        const tokensData = tokens.map((item) => { return <Token item={item} /> })
+        const tokensData = tokens.map((item) => { return <Token item={item} handleRemoveToken={this.handleRemoveToken} /> })
         return tokensData
     }
 
@@ -27,6 +27,19 @@ class InputContainer extends React.Component {
         tokens.push({ id: 1, value: value })
         this.setState({
             tokens
+        })
+    }
+
+    /**
+     * handle remove token
+     */
+    handleRemoveToken = (id) => {
+        const tokens = [...this.state.tokens]
+        const tokensFiltred = tokens.filter((item) => {
+            return item.id !== id
+        })
+        this.setState({
+            tokens: tokensFiltred
         })
     }
 

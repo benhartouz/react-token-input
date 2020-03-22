@@ -1,62 +1,64 @@
+import { ID } from './lib/utils'
+
 const fixtures = [
     {
-        "id": 1,
+        "id": ID(),
         "value": "PHP"
     },
     {
-        "id": 2,
+        "id": ID(),
         "value": "JavaScript"
     },
     {
-        "id": 3,
+        "id": ID(),
         "value": "Python"
     },
     {
-        "id": 4,
+        "id": ID(),
         "value": "Ruby"
     },
     {
-        "id": 5,
+        "id": ID(),
         "value": "Mongo"
     },
     {
-        "id": 1,
+        "id": ID(),
         "value": "PHP"
     },
     {
-        "id": 2,
+        "id": ID(),
         "value": "JavaScript"
     },
     {
-        "id": 3,
+        "id": ID(),
         "value": "Python"
     },
     {
-        "id": 4,
+        "id": ID(),
         "value": "Ruby"
     },
     {
-        "id": 5,
+        "id": ID(),
         "value": "Mongo"
     },
     {
-        "id": 1,
+        "id": ID(),
         "value": "PHP"
     },
     {
-        "id": 2,
+        "id": ID(),
         "value": "JavaScript"
     },
     {
-        "id": 3,
+        "id": ID(),
         "value": "Python"
     },
     {
-        "id": 4,
+        "id": ID(),
         "value": "Ruby"
     },
     {
-        "id": 5,
+        "id": ID(),
         "value": "Mongo"
     }
 ]
