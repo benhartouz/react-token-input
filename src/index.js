@@ -1,5 +1,6 @@
 import React from "react"
-
+import InputContainer from "./components/InputContainer"
+import fixtures from './fixture'
 export default class TokenInput extends React.Component {
 
     constructor(props) {
@@ -8,7 +9,10 @@ export default class TokenInput extends React.Component {
 
     render() {
         return (
-            <div>TokenInput</div>
+            <div>
+                <h1>React Token Input</h1>
+                <InputContainer data={fixtures} />
+            </div>
         )
     }
 }
