@@ -61,3 +61,11 @@ h1 {
     color: #6b6b6b;
     font-size: 1.5em;
 }
+#searchContainer {
+    margin: 0 auto;
+    width: 61.2rem; 
+}
+
+#searchContainer ul{
+    border: 1px solid #ccc;
+}

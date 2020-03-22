@@ -1,6 +1,7 @@
 import React from "react"
 import Input from './Input'
 import Token from './Token'
+import SearchContainer from "./SearchContainer"
 
 class InputContainer extends React.Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class InputContainer extends React.Component {
      */
     generateTokens = () => {
         const { tokens } = this.state
-        const tokensData = tokens.map((item) => { return <Token item={item} handleRemoveToken={this.handleRemoveToken} /> })
+        const tokensData = tokens.map((item) => { return <Token item={item} handleRemoveToken={this.handleRemoveToken} key={`key_${item.id}`} /> })
         return tokensData
     }
 
@@ -51,6 +52,7 @@ class InputContainer extends React.Component {
                     {tokens}
                     <Input getInputValue={this.getInputValue} />
                 </ul>
+                <SearchContainer />
             </div>
         )
     }
